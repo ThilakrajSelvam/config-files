@@ -1,8 +1,4 @@
 spring:
-  application:
-    name: patient-module
-
-  #MySql
   datasource:
     platform: mysql
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/playground-qa
