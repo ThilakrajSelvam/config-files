@@ -8,4 +8,12 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
-      dialect: org.hibernate.dialect.MySQL5Dialect    
+      dialect: org.hibernate.dialect.MySQL5Dialect
+
+  #MySql
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/playground
+    username: dev
+    password: dev
+    initialization-mode: always      
