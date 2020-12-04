@@ -2,6 +2,6 @@ spring:
   datasource:
     platform: mysql
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/playground
-    username: dev
-    password: dev
+    username: ${dbusername}
+    password: ${dbpassword}
     initialization-mode: always
