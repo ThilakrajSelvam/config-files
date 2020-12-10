@@ -5,3 +5,12 @@ spring:
     username: ${dbusername}
     password: ${dbpassword}
     initialization-mode: always
+
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      authentication: TOKEN
+      token: s.yy0MQMIUu6aOfqAv8kOa4pZ6
+      kv-version: 2      
