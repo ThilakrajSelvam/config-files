@@ -2,14 +2,16 @@ spring:
   datasource:
     platform: mysql
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/playground
-    username: ${dbusername}
-    password: ${dbpassword}
+    # username: ${dbusername}
+    # password: ${dbpassword}
     initialization-mode: always
-  cloud:
-    vault:
-      host: localhost
-      port: 8200
-      scheme: http
-      authentication: TOKEN
-      token: s.yy0MQMIUu6aOfqAv8kOa4pZ6
-      kv-version: 2     
+    username: dev
+    password: dev
+  # cloud:
+  #   vault:
+  #     host: localhost
+  #     port: 8200
+  #     scheme: http
+  #     authentication: TOKEN
+  #     token: s.yy0MQMIUu6aOfqAv8kOa4pZ6
+  #     kv-version: 2     
