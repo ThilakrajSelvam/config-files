@@ -7,10 +7,10 @@ spring:
     initialization-mode: always
     username: dev
     password: dev
-  cloud:
-    consul:
-      host: ${CONSUL_HOST:localhost}
-      port: ${CONSUL_HOST_PORT:8500}
+  # cloud:
+  #   consul:
+  #     host: ${CONSUL_HOST:localhost}
+  #     port: ${CONSUL_HOST_PORT:8500}
   # cloud:
   #   vault:
   #     host: localhost
