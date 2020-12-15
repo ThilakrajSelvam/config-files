@@ -15,4 +15,7 @@ spring:
       scheme: http
       authentication: TOKEN
       token: ${VAULT_TOKEN:playground-secret}
-      kv-version: 2    
+      kv-version: 2
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_HOST_PORT:6379}         
