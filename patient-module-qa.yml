@@ -6,10 +6,13 @@ spring:
     password: ${dbpassword}
     initialization-mode: always
   cloud:
+    consul:
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_HOST_PORT:8500}
     vault:
-      host: localhost
-      port: 8200
+      host: ${VAULT_HOST:localhost}
+      port: ${VAULT_HOST_PORT:8200}
       scheme: http
       authentication: TOKEN
-      token: s.zK9vQWBLbavEHlaqUV7dSJgL
+      token: ${VAULT_TOKEN:playground-secret}
       kv-version: 2    

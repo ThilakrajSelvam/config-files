@@ -5,8 +5,6 @@ spring:
     username: ${dbusername}
     password: ${dbpassword}
     initialization-mode: always
-    # username: dev
-    # password: dev
   cloud:
     consul:
       host: ${CONSUL_HOST:localhost}
